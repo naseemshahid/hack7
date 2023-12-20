@@ -42,4 +42,24 @@ return false;
 
 }
 
+// Question No 2
+
+int containsWithin( int *arr, int size, int x, int i, int j){
+
+int *ptr=arr+j;
+
+for(arr = (arr+i) ; arr <= ptr ; arr++){
+
+if(x==*arr){
+
+return true;
+
+}
+
+}
+
+return false;
+
+}
+
 
