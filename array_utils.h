@@ -20,4 +20,26 @@ int *paddedCopy(const int *arr, int oldSize, int newSize,int *newarr);
 // Q5 :function prototype
 int * reverseCopy(int *arr, int size);
 
+// EXERCISE: 
+
+// Question No 1
+
+int contains(const int *arr, int size, int x){
+
+for(int i=0;i<size;i++){
+
+if(*arr == x){
+
+return true;
+
+}
+
+arr++;
+
+}
+
+return false;
+
+}
+
 
