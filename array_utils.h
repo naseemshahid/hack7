@@ -126,4 +126,40 @@ printf(" %d ",reversearr[i]);
 }
 
 }
+// Question No : 5
 
+int *reverseCopy(int *arr, int size){
+
+int condition;
+
+if(size%2==0){
+
+    condition = size / 2;
+
+}
+
+else{
+
+condition = (size-1) / 2;
+
+}
+
+int *cpy = arr;
+int *cpy_2 = arr;
+int temp;
+
+for(int i=0; i<condition; i++){
+
+temp = *cpy;
+
+*cpy = *(cpy_2 + (size-1-i));
+
+*(cpy_2 + (size-1-i)) = temp;
+
+cpy++;
+
+}
+
+return arr;
+
+}
