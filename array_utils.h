@@ -104,5 +104,26 @@ return newarr;
 
 }
 
+// Question No 4
 
+void reverse(int *arr, int size){
+
+    int reversearr[size];
+
+for(int i=(size-1); i>=0; i--  ){
+
+reversearr[i] = *arr;
+arr++;
+
+}
+
+printf("\nReverse of array is : ");
+
+for(int i=0;i<size;i++){
+
+printf(" %d ",reversearr[i]);
+
+}
+
+}
 
