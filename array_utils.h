@@ -62,4 +62,47 @@ return false;
 
 }
 
+// Question No 3 
+
+int *paddedCopy(int *arr, int oldsize, int newsize,int *newarr){
+
+
+int *cpy = arr;
+
+int *cpy2 = newarr;
+
+if(newsize > oldsize){
+
+  
+for(int i=0;i<newsize;i++){
+
+*cpy2 = 0;
+
+cpy2++;
+
+}
+
+
+}
+
+else{
+
+    
+for(int i=0;i<newsize;i++){
+
+ *cpy2 = *cpy;
+
+cpy++;
+
+cpy2++;
+
+}
+
+}
+
+return newarr;
+
+}
+
+
 
